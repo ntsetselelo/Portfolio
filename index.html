@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html langu = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=wdge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>my website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <script src="https://kit.fontawesome.com/5b735f6068.js" crossorigin="anonymous"></script>
+        <!---<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+        ---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+            emailjs.init("TUG4Uhr-BrpZMxIPq");
+            })();
+            </script>
+
+</head>
+
+<body>
+
+    
+<div class = "website-Header">
+    <div class = "website-Header-left-section">
+        <button class= "share-button">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+
+    <div class = "website-Header-right-section">
+        <nav>   
+            <ul id = "sidemenu">
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fas fa-times" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick ="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<div id ="home" class = "container"> 
+    <div class = "profile">
+        <div class = "profile-col-2">
+            <img src = "Photos/hoo.jpeg">
+        </div>
+        <div class = "profile-col-1">
+            <div class = "section-text">
+                <h2>
+                    Ntsetselelo Hlungwani
+                </h2>
+                <div class = "address">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                     <p>Marshalltown, Johannesburg</p>     
+                </div>
+
+                <p>welcome to my website! Dive in and enjoy!</p>
+
+                <div class = "social-icons-home">
+                    <a href = "https://www.tiktok.com/@ntsetselelojames?_t=8oSpfvpuiHe&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href = "https://www.linkedin.com/in/ntsetselelo-hlungwani-697268289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class = "button-home-container">
+                    <button class = "button-home-1" onclick="window.open('./Photos/ntsetseleloCV.pdf')">
+                        Download cv
+                    </button>
+                    <button class = "button-home-2" onclick = "window.location.href = '#contact'">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!---------about--------->
+        <div id = "about">
+            <div class = "container">
+                <div class = "row">
+
+                   <div class = "about-col-1">
+                        <img src = "Photos/ntsetselelo1.jpg">
+                   </div>
+
+                   <div class = "about-col-2">
+                    <div class = "aboutmediv">
+                        <h1 class = "aboutmetext">About Me</h1>
+                    </div>
+                    
+                    <p class = "p-aboutme">
+                    I graduated with a qualification in information technology, specializing 
+                    in software development. My academic journey equipped me with a solid 
+                    foundation in programming, software design, and software engineering 
+                    principles. Throughout my studies, I developed a passion for creating 
+                    efficient and user-friendly Web applications using javaScript, HTML/CSS, 
+                    Python, and backed APIs, which led me to work on various projects. 
+                    <br/>
+                    As I continue to grow in my career, I am currently interested in expanding
+                     my knowledge of data analysis. I am diving deep into learning about 
+                     the power of data to drive decision-making and optimize processes, 
+                     to bridge the gap between software development and data science, and 
+                     to build data-driven applications that offer valuable insights.<br/>
+
+                     My academic journey has been a transformative experience, shaping not 
+                     only my technical skills but also my outlook on life. As I step into 
+                     the professional world, I carry with me the lessons, experiences, and 
+                     passion that have defined my journey so far, and I am excited to take 
+                     on new challenges and assist wherever possible.
+                    </p>
+
+                    <div class = "tab-title">
+
+                        <P class = "tab-links active-link" onclick = "opentab('skills')">Skills</P>
+
+                        <P class = "tab-links" onclick = "opentab('education')">Education</P>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Languages: JavaScript,HTML/CSS C#, Java, Python 
+                            </li>
+                            <li>
+                                Database: MySQL, MongoDB, Postgres
+                            </li>
+                            <li>Tools and Technologies: React.js, Node.js, Express.js,ASP.NET MVC, MVC, JSON,
+                                 RestAPI,Jasmine Testing Framework, Git/GitHub, Netlify
+                            </li>
+                            <li>Procedural programming</li>
+                            <li>Object-Oriented-Programming(OOP)</li>
+                            <li>Software Documentation</li>
+                            <li>Software Testing</li>
+                            <li>Database and Software Development </li>
+                            <li>Web Development</li>
+                            <li>Responsive Web Design</li> 
+                            <li>UX Improvement</li>                              
+                        </ul>
+                    </div>
+             
+                    <div class="tab-contents" id ="education">
+                        <ul>
+                            <li>
+                                <h2>ICT (Software Development)</h2>
+                                <p>Durban University of Technology
+                                    <br>Durban, Kwazulu-natal, South Africa
+                                    <br>february 2020-Present-2023
+                                </p2>                    
+                            </li>
+                            <li>
+                                <h2>Data Analytics</h2>
+                                <p>Durban University of Technology  
+                                    <br>Durban, Kwazulu-natal, South Africa
+                                    <br>february 2023-Present
+                                </p2>                    
+                            </li>
+                                                        
+                        </ul>
+                    </div>
+                </div>  
+                  
+                </div>
+            </div>
+
+     
+
+    
+    
+    
+
+
+  
+
+        
+<!---------services---------->
+<div id = "projects" class = "container">
+    <div class = "project-sub-tittle">
+        <h1>Projects </h1>       
+    </div>
+    
+    <div class = "services-list">
+    <div>
+        <h2>simplewear web application</h2>
+        <hr>
+        <br>
+        <h3>Overview:</h3>
+        <p>simplewear is web application that is designed to provide 
+            a seamless shopping experience. It allows users to browse,
+            search, and purchase products online. It supports user authentification,
+            products review, order tracking and checkout processes.
+        </p>
+        <br>
+        <h3>Features:</h3>
+            <ul>
+                <li>product search and filtering</li>
+                <li>User authentification(Sign Up, Login)</li>
+                <li>Shopping Chart Management</li>
+                <li>Delivery Options</li>
+                <li>Order Placement </li>
+                <li>Tracking Order</li>
+                                            
+            </ul>
+            <br>
+        <h3>Technologies Used:</h3>
+        <p>HTML/CSS, JavaScript, React.js, Node.js, MVC, RestAPI, dayJS, jasmine, Git/GitHub </p>
+        <nav class = "button-project-contaier">
+            <button class = "button-project-1"
+                onclick="window.open('https://github.com/ntsetselelo/simplewear-project/blob/main/index.html')">GitHub
+            </button>
+            <button class = "button-project-2"
+                onclick="window.open('https://simplewear.netlify.app/')">Live demo
+            </button>
+        </nav>
+    </div>
+
+    <div>
+        <h2>Basic Game dev/Rock-paper-Scissors</h2>
+        <hr>
+        <br>
+        <h3>Overview:</h3>
+        <p>This game allows Users to play Against a computer opponent. It 
+            is Designed to be simple and interactive, and provides immediate 
+            feedback on each round's outcome
+        </p>
+        <br>
+        <h3>Features:</h3>
+            <ul>
+                <li>User vs. Computer Gameplay</li>
+                <li>Score tracking</li>
+                <li>responsive Design for both Desktop and Mobile</li>
+                <li>results display</li>
+                <li>Order Placement </li>                          
+            </ul>
+            <br>
+        <h3>Technologies Used:</h3>
+        <p>HTML/CSS, JavaScript, React.js, math.random() buildIn Object, PP, Git/GitHub </p>
+        <nav class = "button-project-contaier">
+            <button class = "button-project-1"
+                onclick="window.open('https://github.com/ntsetselelo/rock-paper-scissors-game/blob/main/index.html')">GitHub
+            </button>
+            <button class = "button-project-2"
+                onclick="window.open('https://hlungdev.netlify.app')">Live demo
+            </button>
+        </nav>
+        </div>
+    </div>
+</div>
+ 
+ <!---------portfolio----------->
+
+ 
+ 
+ <!---------contact--------->
+
+<div id = "contact" class = "content">
+    <h2>Contact Me</h2>
+    
+</div>
+
+ <div class = container>
+        <div class = "contactinfo">
+            <p>Feel free to reach out and connect! Your feedback, inquiries,
+                or just a friendly hello are always welcome.
+                 You can contact me through the provided form, drop an email, or connect on social media. 
+                 I appreciate your interest and look forward to hearing from you soon!
+           </p>
+            <div class = "box">
+                <div class = "icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                <div class = "text">
+                    <p>Marshalltown, Johannesburg</p>
+                </div>
+            </div>
+            <div class = "box">
+                <div class = "icon"><i class="fa-solid fa-phone"></i></div>
+                <div class = "text">
+                    <p>081 8022 005</p>
+                </div>
+            </div>
+            <div class = "box">
+                <div class = "icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class = "text">
+                    <p>hlungwanintsetselo@gmail.com</p>
+                </div>
+            </div>
+            <div class = "social-icons-contact">
+                <a href = "https://www.linkedin.com/in/ntsetselelo-hlungwani-697268289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href = "https://www.tiktok.com/@ntsetselelojames?_t=8oSpfvpuiHe&_r=1">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>    
+        </div>
+        <did class = "contactform">
+
+
+            <form id="contact-form">
+                <div class = "inputbox">
+                    
+                    <input type="text" id="from_name" name="from_name" required>
+                    <span>Your name</span>
+                </div>
+                <div class = "inputbox">
+                    
+                    <input type="email" id="email_id" name="email_id" required>
+                    <span>Email</span>
+                </div>
+                <div class = "inputbox">
+                    
+                    <textarea id="message" name="message" required></textarea>
+                    <span>Type your message</span>
+                </div>
+        
+                <div class = "inputbox">
+                    <input class = "sendbutton" type="submit" value="Submit">
+                </div>
+              
+            </form>
+
+
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <nav>
+        <div class = "nav-links-container">
+            <ol class = "nav-links">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                
+            </ol>
+
+        </div>
+    </nav>
+    <p>Copyright ntsetselelohlungwani@. All rights reserved</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+ <!---------documentation---------->
+
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+            emailjs.init("TUG4Uhr-BrpZMxIPq");
+            })();
+            </script>
+
+ 
+
+        <script>
+            var tablicks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablick of tablicks){
+                    tablick.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+
+
+        </script>
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init("TUG4Uhr-BrpZMxIPq"); 
+
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                emailjs.sendForm("service_xid2wg1", "template_2nk1eyi", this)
+                    .then(
+                        function (response) {
+                            
+                            alert("Email sent successfully:", response);
+                            document.getElementById("contact-form").reset();
+                        },
+                        function (error) {
+                            alert("Error sending email:", error);
+                        }
+                    );
+            });
+        </script>
+
+
+    </body>
+</html>
