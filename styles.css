@@ -42,7 +42,7 @@ body{
 }
 .website-Header-left-section i{
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }
 nav{
     display: flex;
@@ -80,8 +80,6 @@ nav ul li a:hover::after{
 
 /*Home page*/
 
-
-
 .profile{
     display:flex;
     justify-content: space-between ;
@@ -95,11 +93,11 @@ nav ul li a:hover::after{
     display:flex;
 }
 .address i{
-    margin-right: 16px;
+    margin-right: 10px;
 }
 .address p{
     font-weight:600;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 6px;
 }
 .profile-col-2{
@@ -109,8 +107,8 @@ nav ul li a:hover::after{
     display:grid;
 }
 .profile-col-2 img{
-    width:300px;
-    border-radius: 150px;
+    width:200px;
+    border-radius: 100px;
     margin-top: 25px;
 }
 .profile-col-1{
@@ -337,7 +335,7 @@ nav ul li a:hover::after{
     border-style: outset;
 }
 .button-project-container{
-    gap:1000px;
+    gap:10px;
     margin-top:0;
     justify-content: center;
     display: flex;
