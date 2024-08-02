@@ -213,41 +213,17 @@ nav ul li a:hover::after{
     flex-basis: 60%;
     justify-content: center; 
     align-items: center;
-    display:grid;
-    
+    display:grid;  
+}
+.about-me-text{
+    color:blue;
 }
 .p-aboutme{
     color:black;
     font-weight: 500;
 }
-.sub-title{
-    font-size:60px;
-    font-weight:600;
-    color:black;
-}
-.aboutmediv{
 
-   justify-content: center; 
-   align-items: center;
-   display:grid;
-  
-}
-.aboutmetext{
-    
-    width: 8ch;
-    text-align: center;
-    animation: typing 2.5s steps(8),
-               blink 0.5s
-               step-end 
-               infinite
-               alternate;
-    white-space: nowrap;
-    overflow:hidden;
-    border-right:3px solid;
-    font-family: monospace;
-    font-size: 50px;
 
-}
 .tab-title{
     display:flex;
     margin:20px 0 40px;
@@ -446,13 +422,25 @@ nav ul li a:hover::after{
 
 
 
-.content{
-    
-    padding: 50px 100px;
+
+.contact{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+.contact-col-1{
+    flex-basis: 45%;    
+}
+
+.contact-col-2{
+    flex-basis: 45%;
+    display:grid;  
+}
+
+
+.content{
+   color:blue;
+   margin: 50px 0 20px 0;
 }
 
 .box{
@@ -485,33 +473,17 @@ nav ul li a:hover::after{
 }
 
 
-.contact{
-    position:relative;
-    padding: 50px 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-  
-
-.contactform{
-    width:45%;
-    padding:40px;
-    
-}
-.contactform h2{
+.contact-col-2 h2{
     font-size:30px;
     font-weight:500;
 }
-.contactform .inputbox{
+.contact-col-2 .inputbox{
     position:relative;
     width:100%;
     margin-top:10px;
 }
-.contactform .inputbox input,
-.contactform .inputbox textarea
+.contact-col-2 .inputbox input,
+.contact-col-2 .inputbox textarea
 {
     width:100%;
     padding:5px 0;
@@ -522,7 +494,7 @@ nav ul li a:hover::after{
     outline:none;
     resize:none;
 }
-.contactform .inputbox span{
+.contact-col-2 .inputbox span{
     position: absolute;
     left:0;
     padding:5px 0;
@@ -532,10 +504,10 @@ nav ul li a:hover::after{
     transition:0.5s;
     color:#666;
 }
-.contactform .inputbox input:focus ~ span,
-.contactform .inputbox input:valid ~ span,
-.contactform .inputbox textarea:focus ~ span,
-.contactform .inputbox textarea:valid ~ span
+.contact-col-2 .inputbox input:focus ~ span,
+.contact-col-2 .inputbox input:valid ~ span,
+.contact-col-2 .inputbox textarea:focus ~ span,
+.contact-col-2 .inputbox textarea:valid ~ span
 {
     
     font-size:12px;
@@ -569,6 +541,7 @@ nav ul li a:hover::after{
 /*---footer-----*/
 .nav-links-container{
     margin-top:0;
+    
 }
 nav,
 .nav-links{
@@ -577,7 +550,7 @@ nav,
 nav {
     justify-content: space-around;
     align-items:center;
-    height:17ch;
+    height:100px;
 }
 nav ol li{
     display: inline-block;
@@ -717,34 +690,14 @@ nav .fas {
         font-size: 15px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
-        flex-basis:100%;
-
-    }
+   
     .sub-titleS{
         font-size: 20px;
     }
+    .contact-col-1, .contact-col-2{
+        flex-basis: 100%;
+    }
    
-    .contact{
-        padding:50px;
-    }
-    .containerc{
-        flex-direction:column;
-    }
-    .containerc .contactinfo{
-        margin-bottom:40px;
-    }
-    .containerc .contactinfo,
-    .contactform{
-        width:100%;
-    }
-    .content{
-        padding: 20px 20px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     footer nav{
         height: fit-content;
